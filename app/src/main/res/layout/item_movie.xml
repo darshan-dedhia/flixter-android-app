@@ -15,6 +15,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="1dp"
         android:layout_marginTop="-1dp"
+        android:transitionName="profile"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -28,6 +29,7 @@
         android:textColor="#FBFBFB"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:transitionName="movieTitle"
         tools:text="Movie Title" />
 
     <TextView
@@ -39,6 +41,7 @@
         android:layout_marginTop="4dp"
         android:layout_toEndOf="@+id/imageView"
         android:textColor="#FDFDFD"
+        android:transitionName="movieDesc"
         tools:text="Lorem Ispun Lorem Ispun Lorem IspunLorem Ispun Lorem Ispun Lorem Ispun Lorem Ispun Lorem Ispun Lorem Ispun Lorem Ispun" />
 
 </RelativeLayout>

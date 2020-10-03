@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activityDetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="281dp"
+        android:layout_height="124dp"
+        android:layout_below="@+id/player"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="9dp"
+        android:layout_toEndOf="@+id/moviePoster"
+        android:text="movieTitle"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@android:style/Widget.Holo.Light.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/moviePoster"
+        android:numStars="10"
+        android:rating="8.5" />
+
+    <TextView
+        android:id="@+id/txtReleaseDate"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/lbltReleaseDate"
+        android:text="Release Date"
+        android:textColor="#FFFEFE"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/lbltReleaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="20dp"
+        android:text="Release Date:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblAvgRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbltReleaseDate"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="6dp"
+        android:text="Average Rating:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtAverageRating"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtReleaseDate"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="82dp"
+        android:layout_toEndOf="@+id/lblAvgRating"
+        android:text="Average Rating"
+        android:textColor="#FAF6F6"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/txtAverageRating"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="5dp"
+        android:text="movieDesc"
+        android:textColor="#FDFCFC" />
+
+    <ImageView
+        android:id="@+id/moviePoster"
+        android:layout_width="123dp"
+        android:layout_height="166dp"
+        android:layout_above="@+id/lbltReleaseDate"
+        android:layout_below="@+id/player"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="-4dp"
+        android:transitionName="profile"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+</RelativeLayout>
+</layout>
